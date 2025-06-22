@@ -1,4 +1,5 @@
 import React from 'react'
+import HorizontalLine from './HorizontalLine'
 
 const HowItWorks = () => {
     return (
@@ -18,6 +19,8 @@ const HowItWorks = () => {
 
             </div>
             <span className='text-gray-500 mt-2'>Select from the marketplace, deploy or list nodes built to run:</span>
+
+            <HorizontalLine></HorizontalLine>
         </div>
     )
 }
