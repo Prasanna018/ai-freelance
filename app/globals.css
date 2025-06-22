@@ -161,3 +161,113 @@ body {
 .navbarLinearGradient {
   background: linear-gradient(90deg, #0000, #a855f7, #a855f7, #0000);
 }
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.box:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.box:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.box:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 50px;
+}
+
+.box {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+  animation: bounce 1.5s infinite ease-in-out;
+}
+
+.box:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.box:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.box:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.box:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+}

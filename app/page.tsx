@@ -4,6 +4,7 @@ import HeroSection from '@/components/HeroSection'
 import Navbar from '@/components/Header'
 import React from 'react'
 import WhatAreWeSection from '@/components/WhatWeAre'
+import HowItWorks from '@/components/HowItWorks'
 
 const page = () => {
   return (
@@ -15,6 +16,20 @@ const page = () => {
       </div>
       <section id='what-are-we'>
         <WhatAreWeSection></WhatAreWeSection>
+      </section>
+
+      <section className='mb-20'>
+
+
+        <HowItWorks></HowItWorks>
+
+
+
+
+
+
+
+
       </section>
 
     </div>
