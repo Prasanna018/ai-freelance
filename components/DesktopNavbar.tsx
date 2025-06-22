@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import { Button } from './ui/button'
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 
 const DesktopNavbar = () => {
     const [isVisible, setIsVisible] = useState(true)
@@ -53,7 +54,7 @@ const DesktopNavbar = () => {
         <div className={`hidden lg:block fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="mx-auto flex h-[4.5rem] w-full max-w-[76.5625rem] items-center justify-between gap-4 relative bg-[#0a0a0a]">
                 {/* Logo with text */}
-                <a className="flex w-fit cursor-pointer items-center gap-2">
+                <Link href={'/'} className="flex w-fit cursor-pointer items-center gap-2">
                     <div className="h-[1.86438rem] w-[1.86438rem]">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -85,7 +86,7 @@ const DesktopNavbar = () => {
                         </span>
                         m ai
                     </p>
-                </a>
+                </Link>
 
                 {/* Navigation Links */}
                 <nav className="flex items-center gap-4">

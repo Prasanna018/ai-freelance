@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Button } from './ui/button'; // Make sure to import your Button component
+import Link from 'next/link';
 
 const navLinks = [
     { label: 'What are We', href: "#id" },
@@ -59,7 +60,7 @@ const Navbar = () => {
             <nav className={`w-full lg:hidden fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a] transition-transform duration-300 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className="flex h-[4.5rem] w-full items-center justify-between gap-4 px-4">
                     {/* Logo with text */}
-                    <a
+                    <Link
                         href="/"
                         className="flex w-fit cursor-pointer items-center gap-[0.36rem]"
                         aria-label="AXOM AI Home"
@@ -97,7 +98,7 @@ const Navbar = () => {
                             </span>
                             m ai
                         </p>
-                    </a>
+                    </Link>
 
                     {/* Hamburger menu with animation */}
                     <button
