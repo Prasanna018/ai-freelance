@@ -1,9 +1,9 @@
 'use client'
 import { motion, useMotionTemplate, useMotionValue, animate } from "framer-motion";
-import { useEffect } from "react";
+import { useEffect, useMemo } from "react";
 
 const HeroSection = () => {
-    const colors = ["#8B5CF6", "#3B82F6", "#EC4899", "#10B981", "#F59E0B"];
+    const colors = useMemo(() => ["#8B5CF6", "#3B82F6", "#EC4899", "#10B981", "#F59E0B"], []);
     const color = useMotionValue(colors[0]);
     const backgroundImage = useMotionTemplate`radial-gradient(125% 125% at 50% 0%, #020617 40%, ${color})`;
     const border = useMotionTemplate`1px solid ${color}`;
@@ -157,7 +157,7 @@ const HeroSection = () => {
                             style={{
                                 border,
                                 boxShadow,
-                                // @ts-ignore - Custom CSS property
+                                // @ts-expect-error - Custom CSS property
                                 "--tw-shadow-color": color
                             }}
                             className="px-12 py-4 rounded-full bg-black/30 backdrop-blur-md text-white font-bold text-lg relative overflow-hidden group"
