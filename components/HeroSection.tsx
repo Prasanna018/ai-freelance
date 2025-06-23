@@ -16,7 +16,7 @@ const HeroSection = () => {
             repeat: Infinity,
             repeatType: "reverse",
         });
-    }, []);
+    }, [color, colors]);
 
     // Enhanced quantum connection lines with faster animation
     const QuantumConnections = () => {
@@ -157,7 +157,7 @@ const HeroSection = () => {
                             style={{
                                 border,
                                 boxShadow,
-                                //  @ts-expect-error
+                                // @ts-ignore - Custom CSS property
                                 "--tw-shadow-color": color
                             }}
                             className="px-12 py-4 rounded-full bg-black/30 backdrop-blur-md text-white font-bold text-lg relative overflow-hidden group"
@@ -183,7 +183,7 @@ const HeroSection = () => {
                     </p>
                 </motion.div>
             </div>
-        </div >
+        </div>
     );
 };
 
