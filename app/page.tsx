@@ -14,7 +14,7 @@ const page = () => {
       <div className='lg:pt-20 pt-22'>
         <HeroSection></HeroSection>
       </div>
-      <section id='what-are-we'>
+      <section className='mt-20' id='what-are-we'>
         <WhatAreWeSection></WhatAreWeSection>
       </section>
 
