@@ -157,7 +157,7 @@ const HeroSection = () => {
                             style={{
                                 border,
                                 boxShadow,
-                                // @ts-expect-error
+                                //  @ts-expect-error
                                 "--tw-shadow-color": color
                             }}
                             className="px-12 py-4 rounded-full bg-black/30 backdrop-blur-md text-white font-bold text-lg relative overflow-hidden group"
